@@ -933,8 +933,6 @@
 				DDB7C34B15A6181100C8DCE6 /* FBSettings.m */,
 				7EE2A6DF16DE7D15009C2BA4 /* FBShareDialogParams.h */,
 				7EE2A6E016DE7D15009C2BA4 /* FBShareDialogParams.m */,
-				9D17A8DB1671774B00AB1148 /* FBSystemAccountStoreAdapter.h */,
-				9D17A8DC1671774B00AB1148 /* FBSystemAccountStoreAdapter.m */,
 				85F29E9315785D72001F0531 /* FBTestSession+Internal.h */,
 				8525A5B8156F2049009F6F3F /* FBTestSession.h */,
 				8525A5B9156F2049009F6F3F /* FBTestSession.m */,
@@ -1347,7 +1345,7 @@
 			name = FacebookSDKIntegrationTests;
 			productName = FacebookSDKIntegrationTests;
 			productReference = 85A44B9F16A8CE05007BE80E /* FacebookSDKIntegrationTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		B9CBC518152537270036AA71 /* FacebookSDKTests */ = {
 			isa = PBXNativeTarget;
@@ -1367,7 +1365,7 @@
 			name = FacebookSDKTests;
 			productName = FacebookSDKTests;
 			productReference = B9CBC519152537270036AA71 /* FacebookSDKTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		D2AAC07D0554694100DB518D /* facebook-ios-sdk */ = {
 			isa = PBXNativeTarget;
@@ -1857,7 +1855,11 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_THUMB_SUPPORT = NO;
@@ -1872,7 +1874,11 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1951,7 +1957,11 @@
 		85AEC52D17E3930F0073BFEA /* Release64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -2048,7 +2058,11 @@
 		85AEC53617E3931A0073BFEA /* Debug64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_THUMB_SUPPORT = NO;
